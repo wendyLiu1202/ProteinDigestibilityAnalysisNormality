@@ -35,6 +35,8 @@ Samples = merge(Samples, control_avg, by = "Sample.Name")
 Samples$DigestibilityCoeff = 1 - (Samples$Protein_Kjeldahl/Samples$averageControl)
 
 ```
+
+
 ## Statistics
 
 Question: Does the ingredient of the feed (Sample.Name) has a significant impact on the digestibility coefficient (DigestibilityCoeff) ? 
@@ -61,7 +63,7 @@ shapiro.test(x = aov_residuals) #run shapiro-wilk test
 
 ```
 
-Our proportional data meat the assumptions for a one-way anlaysis of varianace and there is only one batch so no batch effect. As such, we continue...
+Our proportional data meat the assumptions for a one-way anlaysis of varianace and there is only one batch so no batch effect. 
 
 ## ANOVA
 
